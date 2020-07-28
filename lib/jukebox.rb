@@ -25,11 +25,12 @@ def play(songs)
   end
 end
 
-def valid?(number, songs)
+def valid?(input, songs)
   #binding.pry
-  Integer(number) rescue false
-  binding.pry
-  if songs[number-1] || songs.include?(number)
+  input = Integer(input) rescue false
+  if number.class == String
+    return songs.include?(input)? input:nil
+  else
     return songs[number-1]? songs[number-1]:number
   else
     return nil
