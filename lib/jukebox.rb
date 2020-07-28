@@ -24,6 +24,9 @@ def play(songs)
   end
 end
 
+def exit_jukebox
+  
+
 
 
 puts say_hello(user_name)
