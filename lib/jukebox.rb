@@ -19,7 +19,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   if valid?(user_input, songs)
-    puts "Playing #{song[user_input]}"
+    puts "Playing #{valid?(user_input,songs)}"
     
   end
 end
@@ -27,7 +27,7 @@ end
 def valid?(number, songs)
   binding.pry
   if songs[number-1] || songs.include?(number)
-    return true
+    return songs[number-1]? songs[number-1]:number
   else
     return nil
   end
