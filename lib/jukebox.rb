@@ -32,14 +32,7 @@ def valid?(input, songs)
     return songs.include?(input)? input: nil
   else
     return songs[number-1]? songs[number-1]: nil
-  else
-    return nil
   end
-    
-end
-
-def is_number?(input)
-  
 end
 
 def exit_jukebox
