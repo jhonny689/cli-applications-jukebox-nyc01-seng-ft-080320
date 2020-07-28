@@ -1,4 +1,4 @@
-require_relative "../bin/jukebox"
+require 'pry'
 # Add your code here
 
 def help
@@ -18,16 +18,22 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  if songs[user_input]
+  if valid?(user_input, songs)
     puts "Playing #{song[user_input}"
     
   end
+end
+
+def valid?(number, songs)
+  binding.pry
 end
 
 def exit_jukebox
   puts "Goodbye"
 end
 
+def run(songs)
+  
+end
 
 
-puts say_hello(user_name)
