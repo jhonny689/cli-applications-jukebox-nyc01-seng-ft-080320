@@ -29,10 +29,10 @@ end
 def valid?(input, songs)
   #binding.pry
   input = Integer(input) rescue false
-  if number.class == String
+  if input.class == String
     return songs.include?(input)? input: nil
   else
-    return songs[number-1]? songs[number-1]: nil
+    return songs[input-1]? songs[input-1]: nil
   end
 end
 
