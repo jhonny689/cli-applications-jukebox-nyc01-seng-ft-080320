@@ -30,6 +30,7 @@ def valid?(number, songs)
     return true
   else
     return nil
+  end
     
 end
 
