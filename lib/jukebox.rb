@@ -35,6 +35,9 @@ def valid?(number, songs)
     
 end
 
+def is_number?(input)
+  input + 0
+
 def exit_jukebox
   puts "Goodbye"
 end
