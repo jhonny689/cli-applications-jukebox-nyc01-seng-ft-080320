@@ -29,7 +29,7 @@ def valid?(number, songs)
   if songs[number-1] || songs.include?(number)
     return true
   else
-    return false
+    return nil
     
 end
 
