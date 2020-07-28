@@ -26,7 +26,7 @@ def play(songs)
 end
 
 def valid?(number, songs)
-  binding.pry
+  #binding.pry
   if songs[number-1] || songs.include?(number)
     return songs[number-1]? songs[number-1]:number
   else
