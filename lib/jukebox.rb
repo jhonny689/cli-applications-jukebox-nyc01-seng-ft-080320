@@ -27,7 +27,7 @@ end
 
 def valid?(number, songs)
   #binding.pry
-  Integer(input) rescue false
+  Integer(number) rescue false
   binding.pry
   if songs[number-1] || songs.include?(number)
     return songs[number-1]? songs[number-1]:number
