@@ -18,7 +18,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  binding.pry
+  #binding.pry
   if valid?(user_input, songs)
     puts "Playing #{valid?(user_input,songs)}"
   else
