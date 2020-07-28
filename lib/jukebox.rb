@@ -26,9 +26,11 @@ end
 
 def valid?(number, songs)
   binding.pry
-  if songs[number-1]
+  if songs[number-1] || songs.include?(number)
     return true
-  elseif songs.
+  else
+    return false
+    
 end
 
 def exit_jukebox
