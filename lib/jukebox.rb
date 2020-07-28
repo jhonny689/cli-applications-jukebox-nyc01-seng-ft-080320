@@ -27,8 +27,9 @@ def play(songs)
 end
 
 def valid?(input, songs)
-  #binding.pry
+  
   input = Integer(input) rescue false
+  binding.pry
   if input.class == String
     return songs.include?(input)? input: nil
   else
