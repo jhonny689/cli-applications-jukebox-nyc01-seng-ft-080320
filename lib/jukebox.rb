@@ -20,8 +20,8 @@ def play(songs)
   user_input = gets.strip
   if valid?(user_input, songs)
     puts "Playing #{valid?(user_input,songs)}"
-    
   end
+  puts "Invalid input, please try again"
 end
 
 def valid?(number, songs)
