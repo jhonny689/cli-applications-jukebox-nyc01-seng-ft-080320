@@ -12,7 +12,7 @@ end
 def list
   songs.each_with_index { |title, index|
     puts "#{index+1}. #{title}"
-  end
+  }
 end
 
 def play(songs)
