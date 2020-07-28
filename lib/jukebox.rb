@@ -29,7 +29,7 @@ end
 def valid?(input, songs)
   
   input = Integer(input) rescue input
-  binding.pry
+  #binding.pry
   if input.class == String
     return songs.include?(input)? input: nil
   else
