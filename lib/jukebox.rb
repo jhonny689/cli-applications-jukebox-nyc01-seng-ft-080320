@@ -27,6 +27,9 @@ end
 
 def valid?(number, songs)
   #binding.pry
+  
+  Integer(input) rescue false
+  binding.pry
   if songs[number-1] || songs.include?(number)
     return songs[number-1]? songs[number-1]:number
   else
@@ -36,8 +39,7 @@ def valid?(number, songs)
 end
 
 def is_number?(input)
-  binding.pry
-  Integer(input) rescue false
+  
 end
 
 def exit_jukebox
